@@ -6,7 +6,7 @@ export const NavBar = async () => {
 
     return (
         <nav className="sticky top-0 left-0 bg-black/30 backdrop-blur-sm text-white z-[9999]">
-            <div className="absolute top-[-88px] md:relative md:top-0 hidden md:flex justify-between items-center">
+            <div className="absolute top-[-88px] lg:relative lg:top-0 hidden lg:flex justify-between items-center">
                 <Reveal className="">
                     <div className="p-4 pl-20 text-xl font-extrabold">
                         <Link href={'/'}>Art<br/>Icon</Link>
@@ -18,12 +18,12 @@ export const NavBar = async () => {
                         <input className="outline-none bg-transparent px-2" placeholder="Busca productos o servicios" />
                     </div>
                 </Reveal>
-                <div className="flex gap-4 p-4 font-bold items-center">
+                <div className="flex gap-4 p-4 pr-20 font-bold items-center">
                     <Reveal className="" delay={0.25} hidden = {{ opacity: 0, y: -25}} visible = {{ opacity: 1, y: 0 }}>
                         <Link href={'/'}>Inicio</Link>
                     </Reveal>
                     <Reveal className="" delay={0.35} hidden = {{ opacity: 0, y: -25}} visible = {{ opacity: 1, y: 0 }}>
-                        <Link href={'/'}>Tienda</Link>
+                        <Link href={'/store'}>Tienda</Link>
                     </Reveal>
                     <Reveal className="" delay={0.45} hidden = {{ opacity: 0, y: -25}} visible = {{ opacity: 1, y: 0 }}>
                         <Link href={'/'}>Nosotros</Link>
@@ -34,9 +34,15 @@ export const NavBar = async () => {
                     <Reveal className="" delay={0.65} hidden = {{ opacity: 0, y: -25}} visible = {{ opacity: 1, y: 0 }}>
                         <Link href={'/'}><FaShoppingCart className="text-xl" /></Link>
                     </Reveal>
+                    <Reveal className="" delay={0.75} hidden = {{ opacity: 0, y: -25}} visible = {{ opacity: 1, y: 0 }}>
+                        <Link href={'/auth/login'} className="rounded px-4 py-1 border transition-all duration-500 hover:border-transparent hover:text-slate-900 hover:bg-white">Iniciar sesión</Link>
+                    </Reveal>
+                    <Reveal className="" delay={0.85} hidden = {{ opacity: 0, y: -25}} visible = {{ opacity: 1, y: 0 }}>
+                        <Link href={'/auth/register'} className="rounded px-4 py-1 border text-slate-900 border-transparent bg-white transition-all duration-500 hover:border-white hover:text-white hover:bg-transparent">Registrate</Link>
+                    </Reveal>
                 </div>
             </div>
-            <div className="h-[88px] flex justify-center items-center relative top-0 md:absolute md:top-[-88px]">
+            <div className="h-[88px] flex justify-center items-center relative top-0 lg:absolute lg:top-[-88px]">
                 hola
             </div>
         </nav>
