@@ -68,7 +68,7 @@ export const Hero = () => {
                     </div> */}
                     <Reveal hidden={{ opacity: 0, x: 75}} visible={{ opacity: 1, x: 0}}>
                         <Carousel
-                            className="py-10 w-[75%] md:px-20 md:w-auto lg:px-0"
+                            className="py-10 w-[75%] md:px-20 md:w-auto lg:px-0 px-8"
                             plugins={[
                                 Autoplay({
                                     delay: 2000,

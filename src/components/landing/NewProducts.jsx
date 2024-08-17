@@ -5,7 +5,7 @@ import { Reveal } from '@/components/generics/Reveal'
 export const NewProducts = () => {
     return (
         <div className="py-12 px-6 bg-black/30 backdrop-blur-sm">
-            <div className="container mx-auto">
+            <div className="md:container mx-auto">
                 <div className="flex justify-between text-white">
                     <h2 className="text-3xl font-extrabold">
                         Check out our latest products
