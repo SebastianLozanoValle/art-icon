@@ -46,7 +46,7 @@ export const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <div className="lg:h-full w-full lg:w-1/2 flex items-center justify-center">
+                <div className="lg:h-full lg:w-1/2 flex items-center justify-center mx-auto">
                     {/* <div className="relative">
                         <Reveal className="" delay={1.25} hidden={{ opacity: 0, y: -75}} visible={{ opacity: 1, y: 0}}>
                             <h2 className="z-[1] block md:hidden p-4 text-center text-3xl font-extrabold">Best Sellers</h2>
@@ -66,9 +66,9 @@ export const Hero = () => {
                             </Reveal>
                         </div>
                     </div> */}
-                    <Reveal hidden={{ opacity: 0, x: 75}} visible={{ opacity: 1, x: 0}}>
-                        <Carousel
-                            className="py-10 w-[75%] md:px-20 md:w-auto lg:px-0 px-8"
+                    <Reveal className="" hidden={{ opacity: 0, x: 75}} visible={{ opacity: 1, x: 0}}>
+                    <Carousel
+                            className="py-10 w-[300px] md:px-20 md:w-auto lg:px-0"
                             plugins={[
                                 Autoplay({
                                     delay: 2000,

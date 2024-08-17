@@ -39,7 +39,7 @@ export const StoreCard = () => {
                         Saco estampable con vinilo textil
                     </p>
                     <div className="flex justify-between pr-1">
-                        <span className="text-xs font-extrabold line-through text-red-900">$50.000 COP</span>
+                        <span className="text-xs line-through text-red-500">$50.000 COP</span>
                         <span className="text-xs font-extrabold">25.000 COP</span>
                     </div>
                     <button className="bg-blue-600 rounded-lg transform hover:scale-95 transition-all duration-500">
