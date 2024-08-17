@@ -5,13 +5,13 @@ import { Banner } from '@/components/Banner'
 import { NewProducts } from '@/components/landing/NewProducts'
 import { Testimonials } from '@/components/landing/Testimonials'
 import { Reveal } from '@/components/generics/Reveal'
-import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
-import { cookies } from "next/headers";
+// import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
+// import { cookies } from "next/headers";
 
 export default async function Home() {
 
-  const supabase = createServerComponentClient({ cookies })
-  const { data: categories } = await supabase.from('categories').select('*')
+  // const supabase = createServerComponentClient({ cookies })
+  // const { data: categories } = await supabase.from('categories').select('*')
 
   return (
     <main className="overflow-x-hidden">
@@ -30,11 +30,11 @@ export default async function Home() {
       <Reveal delay={0.25}>
       <Testimonials />
       </Reveal>
-      <pre>
+      {/* <pre>
         {
           JSON.stringify(categories, null, 2)
         }
-      </pre>
+      </pre> */}
     </main>
   );
 }

@@ -39,7 +39,7 @@ export const Hero = () => {
                                 </p>
                             </Reveal>
                             <Reveal delay={0.75}>
-                                <Link className="px-4 py-2 bg-blue-500 rounded max-w-fit text-center transform transition-all duration-500 hover:scale-90" href={'/'}>
+                                <Link className="px-4 py-2 bg-blue-500 rounded max-w-fit text-center transform transition-all duration-500 hover:scale-90" href={'/store'}>
                                     Explorar
                                 </Link>
                             </Reveal>
