@@ -56,7 +56,7 @@ export const Featured = () => {
                 </div>
                 <div className={`grid grid-cols-1 overflow-hidden md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 py-10 transition-all duration-200 ${isExpanded ? 'max-h-[2160px]' : 'max-h-[180px]'}`}>
                     {categories.map((category, index) => (
-                        <div id={index}>
+                        <div key={index}>
                             <Reveal delay={index <= 3? index*0.25 : (index-3)*0.25} hidden={{ opacity: 0, y: 75}} visible={{ opacity: 1, y: 0}}>
                                 <CategoryFeatured title={category.name} icon={category.icon} />
                             </Reveal>
