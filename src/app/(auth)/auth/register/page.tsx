@@ -60,7 +60,7 @@ export default function Register() {
                 </form>
                 <Reveal delay={1.25} className="w-full relative">
                     <div className="w-full border border-gray-500"></div>
-                    <span className="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-1/2 bg-slate-900 text-gray-500 px-4">Ó registrate con</span>
+                    <span className="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-1/2 bg-slate-900 text-gray-500 px-4 text-center">Ó registrate con</span>
                 </Reveal>
                 <Reveal delay={1.5}>
                     <button className="flex justify-center items-center gap-2 w-full py-4 rounded border tranform hover:scale-95 transition-all duration-500">

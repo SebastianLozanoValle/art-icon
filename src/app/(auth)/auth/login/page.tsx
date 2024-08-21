@@ -49,7 +49,7 @@ export default function Register() {
                     <Reveal delay={1.25}>
                         <div className="w-full relative">
                             <div className="w-full border border-gray-500"></div>
-                            <span className="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-1/2 bg-slate-900 text-gray-500 px-4">Ó ingresa con</span>
+                            <span className="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-1/2 bg-slate-900 text-gray-500 px-4 text-center">Ó ingresa con</span>
                         </div>
                     </Reveal>
                     <Reveal delay={1.5}>
